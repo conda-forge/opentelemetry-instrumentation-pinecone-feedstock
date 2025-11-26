@@ -1,5 +1,5 @@
 {% set name = "opentelemetry-instrumentation-pinecone" %}
-{% set version = "0.49.2" %}
+{% set version = "0.49.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/opentelemetry_instrumentation_pinecone-{{ version }}.tar.gz
-  sha256: a0c42b3a32fbf84340f01fce155867df1816a58eadb6da2df516554301f9c438
+  sha256: 64d289e971b588725e8dad7cab9031c33baec2cf07a3b944516fd70434b38123
 
 build:
   noarch: python
