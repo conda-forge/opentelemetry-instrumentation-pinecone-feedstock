@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: opentelemetry-instrumentation-pinecone
-  version: "0.62.3"
+  version: "0.62.4"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/opentelemetry_instrumentation_pinecone-${{ version }}.tar.gz
-  sha256: 10e3a2db8792bc1a2dfee33ab74e72148cf82708ccb01b309850e7c1eea226c3
+  sha256: 6e3d8f3788c35ef40ddbe085b84565ab09c9ae88058b87bccacbb9e5bb708ac7
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
