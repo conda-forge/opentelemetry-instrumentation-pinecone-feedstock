@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: opentelemetry-instrumentation-pinecone
-  version: "0.62.4"
+  version: "0.63.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/opentelemetry_instrumentation_pinecone-${{ version }}.tar.gz
-  sha256: 6e3d8f3788c35ef40ddbe085b84565ab09c9ae88058b87bccacbb9e5bb708ac7
+  sha256: ad9609b7cf0bbc8274702c2e9b000b943c8dff35dcc13028982c8547b2bab9df
 
 build:
   number: 0
@@ -26,10 +26,10 @@ requirements:
     - python >=${{ python_min }}
     - opentelemetry-api >=1.38.0,<2.0.0
     - opentelemetry-instrumentation >=0.59b0
-    - opentelemetry-semantic-conventions >=0.59b0
+    - opentelemetry-semantic-conventions >=0.63b1
     - opentelemetry-semantic-conventions-ai >=0.5.2,<0.6.0
   run_constraints:
-    - pinecone >=5.0.0,<6.0.0
+    - pinecone >=5.1.0,<9
 
 tests:
   - requirements:
